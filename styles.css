@@ -1,0 +1,133 @@
+
+
+body {
+    background-color: hsl(0, 56%, 35%);
+
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 50px;
+}
+
+header {
+    background-color: #8f4d4d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #8f4d4d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #531c1c; 
+    color: #fff; 
+    text-align: center; 
+}
+
+ .centralizado {
+     text-align: center;
+ }
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.redes-icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redes-icones a {
+    color: #333;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.redes-icones a:hover {
+    color: #0073b1;
+}
+.redes-icones a:nth-child(2):hover {
+    color: #25D366; 
+}
+.redes-icones a:nth-child(3):hover {
+    color: #E1306C; 
+}
+
+#sobre-mim h2, #formacao h2 {
+    font-size: 2.5em; 
+}
+#sobre-mim p, #formacao p, #portfolio {
+    font-size: 1.2em; 
+}
+
+#portfolio a {
+    color: #333;
+    font-size: 5em;
+    text-decoration: none;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#portfolio a:hover {
+    color: #4078c0; 
+}

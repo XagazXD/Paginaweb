@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Olá, eu sou Gabriel</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Entre em Contato</a></li>
+                <li><a href="#redes-sociais">Me Acompanhe nas Redes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sobre-mim" class="centralizado">
+        <h2>Sobre Mim</h2>
+        <p>Olá meu nome é Gabriel Victor, tenho 25 anos, atualmente faço estágio em suporte de T.I no Coren (Conselho de Enfermagem de Sergipe).
+            Academicamente estou cursando Análise e Desenvolvimento de Sistemas onde possuo foco em ciência de dados sendo estudante autodidata.
+            Sempre tive em mente que educação fosse a melhor forma de crescimento pessoal. Nas horas livres também sou atleta de Jiu-Jitsu.</p>
+    
+    </section>
+
+    <section id="formacao" class="centralizado">
+        <h2>Formação Educacional</h2>
+        <p>Análise e Desenvolvimento de Sistemas | 2022 - 2025</p>
+    </section>
+
+    <section id="portfolio" class="centralizado">
+        <h2>Portfólio</h2>
+        <p>Veja alguns dos meus projetos acessando o ícone abaixo.</p>
+        <a href="https://github.com/XagazXD" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </section>
+
+    <section id="contato" class="centralizado">
+        <h2>Entre em Contato</h2>
+        <form action="mailto:gabriel.victor78@hotmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="redes-sociais" class="centralizado">
+        <h2>Me Acompanhe nas Redes</h2>
+        <div class="redes-icones">
+            <a href="https://www.linkedin.com/in/gabrielvictorchagas01742b20b" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5579988865266" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/_xagazbjj?igsh=dTVqc3VscHV3eHFo" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Gabriel Victor © 2024</p>
+    </footer>
+    
+    <script>
+        // Rola automaticamente para a seção correspondente quando um link é clicado
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
